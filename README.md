@@ -1,5 +1,6 @@
 # SYN Spoof Scanner
 A lightweight Python tool designed to perform SYN port scans, with support for using spoofed source IP addresses as a deception technique.
+Link to our blog: https://tierzerosecurity.co.nz/2025/01/08/syn-spoof-scan.html
 
 ```
   ______   ___   _   ____                     __   ____
