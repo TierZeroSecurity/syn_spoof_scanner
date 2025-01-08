@@ -48,7 +48,7 @@ Note that the source MAC spoofing is blocked by default on some virtualised solu
 # Installing syn_spoof_scanner.py
 ```
 git clone git@github.com:TierZeroSecurity/syn_spoof_scanner.git
-cd edr_blocker
+cd syn_spoof_scanner
 ```
 Install python venv
 ```
