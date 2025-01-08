@@ -14,7 +14,7 @@ Link to our blog: https://tierzerosecurity.co.nz/2025/01/08/syn-spoof-scan.html
 
 usage: syn_spoof_scanner.py [-h] -t TARGET [-p PORTS] [-F] [-s SOURCE_IP] [-i INTERFACE] [-ss SPOOFED_IPS] [-f FILE] [--open]
 
-SYN Scan Tool with Optional Spoofed IPs, Multithreading, and Modes
+SYN Scan Tool with Optional Spoofed IPs
 
 options:
   -h, --help            show this help message and exit
@@ -24,7 +24,7 @@ options:
                         Comma-separated list of ports to scan
   -F, --fast            Perform a scan of the top 100 common ports (like Nmap)
   -s SOURCE_IP, --source-ip SOURCE_IP
-                        Source IP address to use for scanning
+                        Source IP address to use for scanning (IP address of the interface (-i))
   -i INTERFACE, --interface INTERFACE
                         Network interface to use for sending packets (e.g., eth0, wlan0)
   -ss SPOOFED_IPS, --spoofed-ips SPOOFED_IPS
@@ -43,6 +43,13 @@ File spoofed IP example:
 172.20.11.10,00:0c:29:b1:04:6a
 172.20.12.10,00:0c:29:b1:04:6b
 10.0.0.10,00:0c:29:b1:04:6c
+```
+For example:
+```
+python3 syn_spoof_scan.py -t 172.20.20.10 -F -i eth0 -f spoof.txt
+```
+```
+python3 syn_spoof_scan.py -t 172.20.20.10 -p 80,443,445,53,139,8080,8443 -s 192.168.0.10 -i eth0 -ss 192.168.0.100,192.168.1.10
 ```
 Note that the source MAC spoofing is blocked by default on some virtualised solutions such as the ESXi vSwitch.  
 
