@@ -44,3 +44,22 @@ File spoofed IP example:
 10.0.0.10,00:0c:29:b1:04:6c
 ```
 Note that the source MAC spoofing is blocked by default on some virtualised solutions such as the ESXi vSwitch.  
+
+# Installing syn_spoof_scanner.py
+```
+git clone git@github.com:TierZeroSecurity/syn_spoof_scanner.git
+cd edr_blocker
+```
+Install python venv
+```
+pip install virtualenv
+```
+Create virtual environment
+```
+python3 -m venv myenv
+```
+Install Python Scapy
+```
+source myenv/bin/activate
+sudo pip install scapy
+```
