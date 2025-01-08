@@ -100,7 +100,7 @@ def main():
     parser.add_argument("-t", "--target", required=True, help="Target IP address or comma-separated IPs/subnets")
     parser.add_argument("-p", "--ports", help="Comma-separated list of ports to scan")
     parser.add_argument("-F", "--fast", action="store_true", help="Perform a scan of the top 100 common ports (like Nmap)")
-    parser.add_argument("-s", "--source-ip", help="Source IP address to use for scanning")
+    parser.add_argument("-s", "--source-ip", help="Source IP address to use for scanning (IP address of the interface (-i))")
     parser.add_argument("-i", "--interface", help="Network interface to use for sending packets (e.g., eth0, wlan0)")
     parser.add_argument("-ss", "--spoofed-ips", help="Comma-separated list of spoofed source IPs")
     parser.add_argument("-f", "--file", help="File containing spoofed IPs (one per line)")
