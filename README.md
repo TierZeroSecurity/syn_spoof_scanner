@@ -9,7 +9,7 @@ A lightweight Python tool designed to perform SYN port scans, with support for u
  |____/ |_| |_| \_| |____/| .__/ \___/ \___/|_|   |____/ \___\__,_|_| |_|_| |_|\___|_|
                           |_|
 
-                                                            Author: Tier Zero Security - NZ
+                                                                By: Tier Zero Security - NZ
 
 usage: syn_spoof_scanner.py [-h] -t TARGET [-p PORTS] [-F] [-s SOURCE_IP] [-i INTERFACE] [-ss SPOOFED_IPS] [-f FILE] [--open]
 
