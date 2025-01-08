@@ -43,4 +43,4 @@ File spoofed IP example:
 172.20.12.10,00:0c:29:b1:04:6b
 10.0.0.10,00:0c:29:b1:04:6c
 ```
-Note that the source MAC spoofing is blocked by default on ESXi vSwitch.  
+Note that the source MAC spoofing is blocked by default on some virtualised solutions such as the ESXi vSwitch.  
