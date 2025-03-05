@@ -46,10 +46,10 @@ File spoofed IP example:
 ```
 For example:
 ```
-python3 syn_spoof_scan.py -t 172.20.20.10 -F -i eth0 -f spoof.txt
+python3 syn_spoof_scanner.py -t 172.20.20.10 -F -i eth0 -f spoof.txt
 ```
 ```
-python3 syn_spoof_scan.py -t 172.20.20.10 -p 80,443,445,53,139,8080,8443 -s 192.168.0.10 -i eth0 -ss 192.168.0.100,192.168.1.10 --open
+python3 syn_spoof_scanner.py -t 172.20.20.10 -p 80,443,445,53,139,8080,8443 -s 192.168.0.10 -i eth0 -ss 192.168.0.100,192.168.1.10 --open
 ```
 Note that the source MAC spoofing is blocked by default on some virtualised solutions such as the ESXi vSwitch.  
 
